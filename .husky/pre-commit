@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn lint ||
+(
+    echo 'Lint fail';
+    false;
+)
+
+yarn prettier ||
+(
+    echo 'Prettier fail';
+    false;
+)
+
+yarn build ||
+(
+    echo 'Build fail';
+    false;
+)

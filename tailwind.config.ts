@@ -9,7 +9,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      width: {
+        "555": "555px",
+        "0.48": "48%",
+      },
+      top: {
+        "-1/2": "-50%",
+      },
+      maxWidth: {
+        "555": "555px",
+      },
+      border: {
+        "border-primary": "1px solid #47AB4B",
+      },
+      borderWidth: {
+        "1": "1px",
+      },
       colors: {
+        primary: "#47AB4B",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

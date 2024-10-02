@@ -3,9 +3,7 @@
 import { ListPracticePage } from "@/src/screens/practice/listPractice";
 
 const CompanyPractice = () => {
-    return (
-        <ListPracticePage/>
-    )
-}
+  return <ListPracticePage />;
+};
 
-export default CompanyPractice
+export default CompanyPractice;

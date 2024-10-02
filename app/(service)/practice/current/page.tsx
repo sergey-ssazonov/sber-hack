@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const CurrentPractice = () => {
-  return (
-    <div>CurrentPractice</div>
-  )
-}
+  return <div>CurrentPractice</div>;
+};
 
-export default CurrentPractice
+export default CurrentPractice;

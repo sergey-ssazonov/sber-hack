@@ -17,8 +17,6 @@ const newPracticeApi = practiceApi.injectEndpoints({
       //       ]
       //     : [{ type: 'Sections', id: 'LIST' }],
     }),
-
-    
   }),
   overrideExisting: false,
 });

@@ -13,7 +13,7 @@ interface IProfileCardProps {
   surname: string | undefined;
   id: number | undefined;
   isLoading: boolean;
-  role?: 'company' | 'student',
+  role?: "company" | "student";
 }
 
 const ProfileCard: FC<IProfileCardProps> = ({ id, name, surname, isLoading, role = "student" }) => {
@@ -41,9 +41,9 @@ const ProfileCard: FC<IProfileCardProps> = ({ id, name, surname, isLoading, role
             //   width={50}
             //   height={50}
             // />
-            role === 'student' ?
-            `${BASE_API_URL}users/${id}/avatars/source` :
-             `${BASE_API_URL}companies/${id}/avatars/source`
+            role === "student"
+              ? `${BASE_API_URL}users/${id}/avatars/source`
+              : `${BASE_API_URL}companies/${id}/avatars/source`
           }
         />
       ) : (

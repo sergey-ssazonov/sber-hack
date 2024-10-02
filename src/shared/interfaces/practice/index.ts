@@ -1,1 +1,1 @@
-export * from './practice.interface'
+export * from "./practice.interface";

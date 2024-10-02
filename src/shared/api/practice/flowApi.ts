@@ -33,4 +33,9 @@ const flowApi = practiceApi.injectEndpoints({
   overrideExisting: false,
 });
 
-export const { useAcceptFlowMutation, useCanelFlowMutation, useGetFlowsByPracticeQuery, useCreateFlowMutation } = flowApi;
+export const {
+  useAcceptFlowMutation,
+  useCanelFlowMutation,
+  useGetFlowsByPracticeQuery,
+  useCreateFlowMutation,
+} = flowApi;

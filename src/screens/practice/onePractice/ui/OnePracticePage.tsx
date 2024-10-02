@@ -20,8 +20,8 @@ const OnePracticePage: FC<OnePracticePageProps> = ({ id }) => {
 
   return (
     <Flex vertical gap={36} className="h-full">
-      <BackButton/>
-      {practice && <OnePractice {...practice}/>}
+      <BackButton />
+      {practice && <OnePractice {...practice} />}
     </Flex>
   );
 };

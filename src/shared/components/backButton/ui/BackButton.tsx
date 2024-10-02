@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { Button, Flex } from "antd";

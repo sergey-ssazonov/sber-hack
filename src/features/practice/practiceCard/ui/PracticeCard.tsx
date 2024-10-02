@@ -14,7 +14,7 @@ const PracticeCard: FC<IPractice> = (practice) => {
   return (
     <div
       onClick={() => router.push(`/practice/${practice.id}`)}
-      className="w-0.48 h-fit rounded-3xl bg-white p-6"
+      className="h-fit w-0.48 rounded-3xl bg-white p-6"
     >
       <Flex justify="space-between">
         <div className="">
@@ -47,21 +47,21 @@ const PracticeCard: FC<IPractice> = (practice) => {
         )}
       </Flex>
       {/* <Flex align="end" className="w-full"> */}
-        <Flex vertical gap={2}>
+      <Flex vertical gap={2}>
+        <Title level={5}>
+          <UserOutlined /> {practice.vacanciesCount}{" "}
+        </Title>
+        <Title level={5}>{practice.studyCondition}</Title>
+        {practice.isOpened ? (
           <Title level={5}>
-            <UserOutlined /> {practice.vacanciesCount}{" "}
+            <UnlockOutlined /> Набор открыт
           </Title>
-          <Title level={5}>{practice.studyCondition}</Title>
-          {practice.isOpened ? (
-            <Title level={5}>
-              <UnlockOutlined /> Набор открыт
-            </Title>
-          ) : (
-            <Title level={5}>
-              <LockOutlined /> Набор закрыт
-            </Title>
-          )}
-        </Flex>
+        ) : (
+          <Title level={5}>
+            <LockOutlined /> Набор закрыт
+          </Title>
+        )}
+      </Flex>
       {/* </Flex> */}
     </div>
   );

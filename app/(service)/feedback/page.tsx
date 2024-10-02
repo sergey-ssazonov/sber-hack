@@ -3,9 +3,7 @@
 import { FeedbackPage } from "@/src/screens/feedback";
 
 const Feedback = () => {
-    return (
-        <FeedbackPage/>
-    )
-}
+  return <FeedbackPage />;
+};
 
-export default Feedback
+export default Feedback;

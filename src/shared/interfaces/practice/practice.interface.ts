@@ -17,7 +17,6 @@ export interface IPractice {
   company: ICompany;
 
   isOpened: boolean;
-
 }
 
 export interface IPracticeCardProps extends IPractice {}
@@ -27,13 +26,13 @@ export interface IDirection {
   id: number;
 }
 
-export interface INewFlow{
+export interface INewFlow {
   comment: string;
   test: string;
   id: number;
 }
 
-export interface IFlow  {
+export interface IFlow {
   id: number;
   user: IUser;
   comment: string;

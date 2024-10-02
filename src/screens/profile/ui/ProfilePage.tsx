@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useGetUserMeQuery } from "@/src/shared/api/user/getUserMeApi";
 import { Flex, Typography } from "antd";
@@ -12,10 +12,8 @@ const ProfilePage = () => {
 
   return (
     <Flex vertical gap={15} className="w-full">
-      <Flex gap ={8} align="center">
-        <Title level={4}>
-          ФИО:
-        </Title>
+      <Flex gap={8} align="center">
+        <Title level={4}>ФИО:</Title>
         <Title editable level={4}>
           {userData?.surname}
         </Title>
@@ -26,10 +24,8 @@ const ProfilePage = () => {
           {userData?.lastname}
         </Title>
       </Flex>
-      <Flex gap ={8} align="center">
-        <Title level={4}>
-          Образование:
-        </Title>
+      <Flex gap={8} align="center">
+        <Title level={4}>Образование:</Title>
         <Title editable level={4}>
           {userData?.university}
         </Title>
@@ -40,17 +36,14 @@ const ProfilePage = () => {
           {userData?.course} курс
         </Title>
       </Flex>
-      <Flex gap ={8} align="center">
-        <Title level={4}>
-          Контакты для связи:
-        </Title>
+      <Flex gap={8} align="center">
+        <Title level={4}>Контакты для связи:</Title>
         <Title editable level={4}>
           {userData?.email}
         </Title>
         <Title editable level={4}>
           {userData?.phone}
         </Title>
-        
       </Flex>
     </Flex>
   );

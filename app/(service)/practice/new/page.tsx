@@ -2,8 +2,6 @@
 
 import { NewPracticePage } from "@/src/screens/practice/newPractice";
 
-const NewPractice = () => {
+export default function NewPractice() {
   return <NewPracticePage />;
-};
-
-export default NewPractice;
+}

@@ -1,9 +1,7 @@
-import React, { FC } from 'react'
+import React, { FC } from "react";
 
 const ListCompanyPage: FC = () => {
-  return (
-    <div>ListCompanyPage</div>
-  )
-}
+  return <div>ListCompanyPage</div>;
+};
 
-export default ListCompanyPage
+export default ListCompanyPage;

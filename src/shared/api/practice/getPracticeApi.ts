@@ -21,10 +21,8 @@ const getPracticeApi = practiceApi.injectEndpoints({
       query: (id) => ({
         url: "/practices",
         method: "GET",
-        params: {companyId:  id}
+        params: { companyId: id },
       }),
-
-     
     }),
 
     getPracticeById: build.query<IPractice, number>({
@@ -37,4 +35,5 @@ const getPracticeApi = practiceApi.injectEndpoints({
   overrideExisting: false,
 });
 
-export const { useGetAllPracticeQuery, useGetPracticeByIdQuery, useLazyGetMyPracticeQuery } = getPracticeApi;
+export const { useGetAllPracticeQuery, useGetPracticeByIdQuery, useLazyGetMyPracticeQuery } =
+  getPracticeApi;

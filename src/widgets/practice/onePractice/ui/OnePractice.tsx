@@ -41,9 +41,7 @@ const OnePractice: FC<IPractice> = ({
 
   const { data: userData } = useGetUserMeQuery();
 
-  const handleCreateFlow = () => {
-    
-  }
+  const handleCreateFlow = () => {};
 
   console.log("flowsData", flowsData);
 

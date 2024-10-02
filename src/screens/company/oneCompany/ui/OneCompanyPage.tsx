@@ -1,11 +1,9 @@
-import React, { FC } from 'react'
+import React, { FC } from "react";
 
-type OneCompanyPageProps = {id: number}
+type OneCompanyPageProps = { id: number };
 
-const OneCompanyPage: FC<OneCompanyPageProps> = ({id}) => {
-  return (
-    <div>OneCompanyPage {id}</div>
-  )
-}
+const OneCompanyPage: FC<OneCompanyPageProps> = ({ id }) => {
+  return <div>OneCompanyPage {id}</div>;
+};
 
-export default OneCompanyPage
+export default OneCompanyPage;

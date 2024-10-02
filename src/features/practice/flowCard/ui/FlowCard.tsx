@@ -61,7 +61,7 @@ const FlowCard: FC<IFlow> = ({ id, status, comment, test, user, practice }) => {
           <Button key="ok" type="primary" onClick={handleOk}>
             Принять
           </Button>,
-        ]
+        ];
     }
   };
 
@@ -75,9 +75,11 @@ const FlowCard: FC<IFlow> = ({ id, status, comment, test, user, practice }) => {
         title={user.surname + " " + user.name + " " + user.lastname}
         open={isModalFlowOpen}
         onOk={handleOk}
-        footer={
-          [<Text key="ok" type="success">Одобрено</Text>]
-        }
+        footer={[
+          <Text key="ok" type="success">
+            Одобрено
+          </Text>,
+        ]}
         onCancel={handleCancel}
         centered
         style={{ textAlign: "center" }}

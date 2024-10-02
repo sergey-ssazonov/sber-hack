@@ -4,7 +4,7 @@ import { IPractice } from "../../interfaces/practice";
 import { newsApi } from "./newsApi";
 
 const crudNewsApi = newsApi.injectEndpoints({
-//   tagTypes: ["news"],
+  //   tagTypes: ["news"],
   endpoints: (build) => ({
     getAllNews: build.query<INews[], void>({
       query: () => ({
@@ -12,10 +12,10 @@ const crudNewsApi = newsApi.injectEndpoints({
         method: "GET",
       }),
 
-    //   providesTags: (result) =>
-    //     result
-    //       ? [...result.map(({ title }) => ({ type: "news", title })), { type: "news", id: "LIST" }]
-    //       : [{ type: "news", id: "LIST" }],
+      //   providesTags: (result) =>
+      //     result
+      //       ? [...result.map(({ title }) => ({ type: "news", title })), { type: "news", id: "LIST" }]
+      //       : [{ type: "news", id: "LIST" }],
     }),
     createNews: build.mutation<INews, INews>({
       query: ({ title, description }) => ({

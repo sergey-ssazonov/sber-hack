@@ -1,1 +1,1 @@
-export { default as ListPracticePage } from './ui/ListPracticePage'
+export { default as ListPracticePage } from "./ui/ListPracticePage";

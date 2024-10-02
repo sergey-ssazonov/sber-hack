@@ -1,1 +1,1 @@
-export { default as OnePracticePage } from './ui/OnePracticePage'
+export { default as OnePracticePage } from "./ui/OnePracticePage";

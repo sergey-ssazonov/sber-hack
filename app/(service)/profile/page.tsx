@@ -12,7 +12,5 @@ export default function Profile() {
 
   console.log("session", session);
 
-  return (
-    <ProfilePage/>
-  );
+  return <ProfilePage />;
 }

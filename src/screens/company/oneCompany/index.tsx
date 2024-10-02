@@ -1,1 +1,1 @@
-export { default as OneCompanyPage } from './ui/OneCompanyPage'
+export { default as OneCompanyPage } from "./ui/OneCompanyPage";

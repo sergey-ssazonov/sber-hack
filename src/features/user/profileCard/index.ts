@@ -1,1 +1,1 @@
-export { default as ProfileCard } from './ui/ProfileCard'
+export { default as ProfileCard } from "./ui/ProfileCard";

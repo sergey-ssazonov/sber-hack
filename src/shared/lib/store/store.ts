@@ -21,7 +21,7 @@ export const store = configureStore({
       .concat(practiceApi.middleware)
       .concat(directionApi.middleware)
       .concat(companyApi.middleware)
-      .concat(newsApi.middleware)
+      .concat(newsApi.middleware),
 });
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

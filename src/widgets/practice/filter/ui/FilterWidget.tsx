@@ -17,7 +17,9 @@ const FilterWidget: FC = () => {
       {isLoading ? (
         <Spin />
       ) : (
-        <Flex vertical gap={4} className="mt-4">{directionData?.map((el) => <Checkbox key={el.id}>{el.name}</Checkbox>)}</Flex>
+        <Flex vertical gap={4} className="mt-4">
+          {directionData?.map((el) => <Checkbox key={el.id}>{el.name}</Checkbox>)}
+        </Flex>
       )}
     </div>
   );

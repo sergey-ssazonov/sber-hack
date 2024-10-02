@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const NewFlowModal = () => {
-  return (
-    <div>NewFlowModal</div>
-  )
-}
+  return <div>NewFlowModal</div>;
+};
 
-export default NewFlowModal
+export default NewFlowModal;

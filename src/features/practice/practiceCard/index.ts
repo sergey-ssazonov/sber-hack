@@ -1,1 +1,1 @@
-export { default as PracticeCard } from './ui/PracticeCard'
+export { default as PracticeCard } from "./ui/PracticeCard";
